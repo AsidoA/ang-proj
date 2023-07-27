@@ -1,0 +1,23 @@
+
+.card{
+    margin: 10px;
+    width: 250px;
+}
+.delete-btn{
+    margin-left: 100px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 10px); /* Adjust the width for smaller screens */
+    }
+  }

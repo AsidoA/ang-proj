@@ -1,0 +1,14 @@
+<div class="card-container">
+    <mat-card *ngFor="let car of carsArray" class="card">
+        <mat-card-content>
+            <h2>{{car.data.car_name}}</h2>
+            <h3>Plate Number:{{car.data.plate_number}}</h3>
+            <h3>Model:{{car.data.model}}</h3>
+            <h3>Engine:{{car.data.engine}}</h3>
+            <h3>Year:{{car.data.year}}</h3>
+        </mat-card-content>
+        <button class="delete-btn" mat-mini-fab color="warn"(click)="onDelete(car.id)" aria-label="Example icon button with a filter list icon" >
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-card>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="titel">Welcome to AnyPart</h1>
+    <p class="desc">Please enter youre car plate number <br/> to add new cars</p>
+    <div class="input">
+        <form class="example-form" #carsForm='ngForm'>
+            <mat-form-field class="example-full-width">
+              <mat-label>Plate Number</mat-label>
+              <input matInput placeholder="Ex. 7255963" #plateInput>
+            </mat-form-field>
+            <br/>
+            <button mat-raised-button color="primary" (click)="addCar(plateInput.value)">Add car</button>
+          </form>
+    </div>
+</div>
